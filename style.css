@@ -1,0 +1,170 @@
+.entete {
+	background: linear-gradient(to bottom,#BFE6FA,#DDF5D2);
+	text-align: center;
+	border-bottom: 5px solid #8BD86B;
+	padding: 24px 16px;
+}
+.eco {
+	color: #2F7A3A;
+}
+.defi { 
+	color: #3BA7D9;
+}
+.logo {
+	width: 72px;
+	height: 72px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 0 auto;
+	font-size: 40px;
+	line-height: 72px;
+}
+.nom {
+	font-family: "Baloo 2", sans-serif;
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+.slogan {
+	font-family: "Baloo 2", sans-serif;
+	color: #2F5A44;
+	font-size: 18px;
+}
+body {
+	margin: 0;
+}
+.cartes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px;
+	padding: 20px 16px;
+}
+.carte {
+	height: 150px;
+	border: none;
+	background: none;
+	padding: 0;
+	position: relative;
+	perspective: 800px;
+}
+.face {
+	position: absolute;
+	inset: 0;
+	border-radius: 18px;
+	display: grid;
+	place-content: center;
+	font-family: "Baloo 2", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	backface-visibility: hidden;
+	transition: transform 0.5s;
+}
+.dos {
+	background: linear-gradient(to bottom right, #3BA7D9, #8BD86B);
+	color: white;
+}
+.avant {
+	background: white;
+	border: 3px solid #8BD86B;
+	transform: rotateY(-180deg);
+}
+.retournee .dos {
+	transform: rotateY(180deg);
+}
+.retournee .avant {
+	transform: rotateY(0deg);
+}
+.dos::before {
+	content: "❓";
+	font-size: 34px;
+}
+.verrou .dos::before {
+	content: "🔒";
+}
+.verrou .dos {
+	background: #E3EAE6;
+	color: #6B7D73;
+}
+.fiche {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background: white;
+	overflow-y: auto;
+	padding: 24px 20px;
+   font-family: "Baloo 2", sans-serif;
+   display: none;
+}
+.fiche.ouverte {
+	display: block;
+}
+.fiche-titre {
+	font-size: 32px;
+	font-weight: 800;
+	color: #2F7A3A;
+	text-align: center;
+	border-bottom: 5px solid #8BD86B;
+	padding-bottom: 12px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.rubrique {
+	margin-bottom: 18px;
+	font-size: 17px;
+	line-height: 1.5;
+}
+.rubrique h3 {
+	font-size: 22px;
+	font-weight: 800;
+	color: #2F5A44;
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+.retour {
+	width: 100%;
+	padding: 14px;
+	font-family: "Baloo 2", sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	color: white;
+	background: #2F7A3A;
+	border: none;
+	border-radius: 14px;
+}
+.bulle {
+	position: fixed;
+	left: 16px;
+	right: 16px;
+	bottom: 20px;
+	z-index: 20;
+	background: #1F3A2B;
+	color: white;
+	padding: 14px;
+	border-radius: 14px;
+	text-align: center;
+	font-family: "baloo 2",sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	display: none;
+}
+.bulle.visible {
+	display: block;
+}
+@media (min-width: 800px) {
+	.cartes {
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 32px 24px;
+	}
+	.fiche {
+		inset: 40px 0;
+		width: 620px;
+		margin: 0 auto;
+		border border-radius: 22px;
+		box-shadow: 0 0 0 100vmax rgba(15, 35, 25, 0.55);
+	}
+}
+	.body:has(.fiche.ouverte).cartes {
+		pointer-events: none;
+}
