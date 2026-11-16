@@ -5,7 +5,7 @@ ficheOuverte.classList.remove("ouverte");
  });
 let bulle= document.querySelector(".bulle");
 
-let debut= new Date("2026-11-16");
+let debut= new Date("2026-11-15");
 let aujourdhui= new Date();
 let jours= (aujourdhui - debut) / 86400000;
 let semaine= Math.floor(jours / 7) +1;
