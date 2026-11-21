@@ -161,10 +161,10 @@ body {
 		inset: 40px 0;
 		width: 620px;
 		margin: 0 auto;
-		border border-radius: 22px;
+		border-radius: 22px;
 		box-shadow: 0 0 0 100vmax rgba(15, 35, 25, 0.55);
 	}
 }
-	.body:has(.fiche.ouverte).cartes {
+	body:has(.fiche.ouverte).cartes {
 		pointer-events: none;
 }
