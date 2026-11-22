@@ -168,8 +168,8 @@ body {
 	body:has(.fiche.ouverte).cartes {
 		pointer-events: none;
 }
-rubrique img {
-	width: 100%
-	border-radius: 12px
-	margin-top: 10px
+.rubrique img {
+	width: 100% ;
+	border-radius: 12px ;
+	margin-top: 10px ;
 }
