@@ -181,7 +181,7 @@ body {
 }
 .plateau-image {
 	widht: 100% ;
-    border- radius ;
+    border-radius: 12px ;
 	margin-bottom: 16px ;
 }
 .retour-site {
