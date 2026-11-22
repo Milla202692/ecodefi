@@ -173,3 +173,32 @@ body {
 	border-radius: 12px ;
 	margin-top: 10px ;
 }
+.page-plateau {
+	max-widht: 1000px ;
+	margin: 0 auto ;
+	padding: 24px 16px ;
+    font-family: "Boloo 2",sans-serif ;
+}
+.plateau-image {
+	widht: 100% ;
+    border- radius ;
+	margin-bottom: 16px ;
+}
+.retour-site {
+	display: block ;
+	text-align: center ;
+	margin-top: 14px ;
+	color: #2F7A3A ;
+	font-size: 18px ;
+	font-weight: 700 ;
+}
+@media print {
+	.retour, .retour-site {
+		display: none ;
+}
+}
+@page {
+	size: landscape ;
+	margin: 1cm;
+}
+	
