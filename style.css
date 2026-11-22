@@ -193,7 +193,7 @@ body {
 	font-weight: 700 ;
 }
 @media print {
-	.retour, .retour-site, .fiche-titre {
+	.retour, .retour-site, .fiche-titre, .aide {
 		display: none ;
 }
 	.plateau-image {
@@ -210,4 +210,9 @@ body {
 	size: landscape ;
 	margin: 1cm;
 }
-	
+.aide {
+	text-align: center ;
+	font-size: 15px ;
+	color: #2F5A44 ;
+	margin-top: 10px ;
+}
