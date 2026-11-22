@@ -174,13 +174,13 @@ body {
 	margin-top: 10px ;
 }
 .page-plateau {
-	max-widht: 1000px ;
+	max-width: 1000px ;
 	margin: 0 auto ;
 	padding: 24px 16px ;
-    font-family: "Boloo 2",sans-serif ;
+    font-family: "Baloo 2",sans-serif ;
 }
 .plateau-image {
-	widht: 100% ;
+	width: 100% ;
     border-radius: 12px ;
 	margin-bottom: 16px ;
 }
